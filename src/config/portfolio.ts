@@ -28,6 +28,15 @@ export interface Stats {
   };
 }
 
+export interface BlogPost {
+  slug: string;
+  title: string;
+  date: string;
+  excerpt: string;
+  tags?: string[];
+  content?: string;
+}
+
 export interface PortfolioConfig {
   personal: {
     name: string;
@@ -45,6 +54,10 @@ export interface PortfolioConfig {
   about: {
     heading: string;
     paragraphs: string[];
+  };
+  blog?: {
+    enabled: boolean;
+    postsPerPage?: number;
   };
 }
 
@@ -176,6 +189,10 @@ export const portfolioConfig: PortfolioConfig = {
       "I specialize in building responsive web applications using modern technologies. I believe in writing code that's not just functional, but also maintainable and scalable.",
       "When I'm not coding, you'll find me exploring new technologies, contributing to open source, or sharing knowledge with the developer community.",
     ],
+  },
+  blog: {
+    enabled: true,
+    postsPerPage: 6,
   },
 };
 
