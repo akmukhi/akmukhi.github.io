@@ -150,6 +150,14 @@ export const portfolioConfig: PortfolioConfig = {
       technologies: ["Python", "FastAPI", "Docker", "GCP", "Prometheus", "OpenTelemetry", "Loki", "Grafana"],
       githubUrl: "https://github.com/akmukhi/high-scale-event-pipeline",
       //liveUrl: "https://yourproject.com",
+    },
+    {
+      title: "Cloud Sentinal CLI",
+      description:
+        "Python based CLI tool for detecting cloud misconfigurations, IAM drift, and operational risks across GCP resources. It provides opinionated checks for IAM policies, Cloud Run services, Airflow/ETL workflows, JSON/YAML for automation, CI/CD integration, and alerting.",
+      technologies: ["Python", "GCP", "Airflow"],
+      githubUrl: "https://github.com/akmukhi/high-scale-event-pipeline",
+      //liveUrl: "https://yourproject.com",
     }
   ],
   stats: {
