@@ -27,6 +27,8 @@ const Blog = () => {
         setPosts(postsToShow);
       } catch (error) {
         console.error("Error loading blog posts:", error);
+        // Set empty array to prevent crash
+        setPosts([]);
       } finally {
         setLoading(false);
       }

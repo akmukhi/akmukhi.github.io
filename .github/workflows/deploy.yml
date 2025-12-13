@@ -29,9 +29,21 @@ jobs:
         env:
           GITHUB_PAGES: true
 
+      - name: Verify build output
+        run: |
+          echo "Checking dist folder contents:"
+          ls -la dist/ || echo "ERROR: dist folder not found!"
+          echo ""
+          echo "Checking for index.html:"
+          ls -la dist/index.html || echo "ERROR: index.html not found!"
+          echo ""
+          echo "Checking for assets:"
+          ls -la dist/assets/ || echo "WARNING: assets folder not found"
+
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           cname: false
+          force_orphan: false
