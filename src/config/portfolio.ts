@@ -175,7 +175,7 @@ export const portfolioConfig: PortfolioConfig = {
   ],
   stats: {
     yearsExperience: 3,
-    projectsCompleted: 50,
+    projectsCompleted: 20,
     //happyClients: 20,
     customStat: {
       value: "∞",
