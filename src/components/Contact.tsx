@@ -40,16 +40,16 @@ const Contact = () => {
             {portfolioConfig.social.map((social) => {
               const Icon = getIcon(social.name);
               return (
-                <a
+              <a
                   key={social.name}
                   href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-lg bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-lg bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all"
                   aria-label={social.name}
-                >
-                  <Icon size={20} />
-                </a>
+              >
+                <Icon size={20} />
+              </a>
               );
             })}
           </div>

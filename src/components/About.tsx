@@ -22,28 +22,28 @@ const About = () => {
           <div className="mt-12 pt-8 border-t border-border">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.yearsExperience && (
-                <div>
+              <div>
                   <p className="text-3xl font-bold text-foreground">{stats.yearsExperience}+</p>
-                  <p className="font-mono text-sm text-muted-foreground">Years Experience</p>
-                </div>
+                <p className="font-mono text-sm text-muted-foreground">Years Experience</p>
+              </div>
               )}
               {stats.projectsCompleted && (
-                <div>
+              <div>
                   <p className="text-3xl font-bold text-foreground">{stats.projectsCompleted}+</p>
-                  <p className="font-mono text-sm text-muted-foreground">Projects Completed</p>
-                </div>
+                <p className="font-mono text-sm text-muted-foreground">Projects Completed</p>
+              </div>
               )}
               {stats.happyClients && (
-                <div>
+              <div>
                   <p className="text-3xl font-bold text-foreground">{stats.happyClients}+</p>
-                  <p className="font-mono text-sm text-muted-foreground">Happy Clients</p>
-                </div>
+                <p className="font-mono text-sm text-muted-foreground">Happy Clients</p>
+              </div>
               )}
               {stats.customStat && (
-                <div>
+              <div>
                   <p className="text-3xl font-bold text-foreground">{stats.customStat.value}</p>
                   <p className="font-mono text-sm text-muted-foreground">{stats.customStat.label}</p>
-                </div>
+              </div>
               )}
             </div>
           </div>

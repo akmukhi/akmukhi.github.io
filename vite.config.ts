@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.GITHUB_PAGES ? "/akmukhi.github.io/" : "/",
+  base: process.env.GITHUB_PAGES ? "/" : "/",
   server: {
     host: "::",
     port: 8080,
