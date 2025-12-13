@@ -61,16 +61,17 @@ export function parseFrontmatter(content: string): {
 export async function loadBlogPosts(): Promise<BlogPost[]> {
   try {
     // Use Vite's glob import to get all markdown files
-    // Note: Files are imported as raw strings using ?raw query
-    const markdownModules = import.meta.glob("../content/blog/*.md?raw", {
+    // In production, Vite will bundle these as static assets
+    const markdownModules = import.meta.glob("../content/blog/*.md", {
       eager: true,
+      query: "?raw",
       import: "default",
     }) as Record<string, string>;
 
     const posts: BlogPost[] = [];
 
     for (const [path, content] of Object.entries(markdownModules)) {
-      if (typeof content !== "string") {
+      if (!content || typeof content !== "string") {
         console.warn(`Skipping ${path}: content is not a string`);
         continue;
       }
@@ -81,7 +82,7 @@ export async function loadBlogPosts(): Promise<BlogPost[]> {
       const slug = path
         .split("/")
         .pop()
-        ?.replace(/\.md\?raw$/, "") || "";
+        ?.replace(/\.md$/, "") || "";
 
       if (!frontmatter.title || !frontmatter.date) {
         console.warn(`Skipping blog post ${slug}: missing required frontmatter`);
@@ -122,6 +123,7 @@ export async function loadBlogPosts(): Promise<BlogPost[]> {
     return posts;
   } catch (error) {
     console.error("Error loading blog posts:", error);
+    // Return empty array instead of throwing to prevent app crash
     return [];
   }
 }
