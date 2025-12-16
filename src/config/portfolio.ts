@@ -189,11 +189,10 @@ export const portfolioConfig: PortfolioConfig = {
     },
   },
   about: {
-    heading: "Crafting digital experiences with code and creativity.",
+    heading: "Turning infrastructure into leverage for product teams.",
     paragraphs: [
-      "Hello! I'm a passionate developer who loves turning ideas into reality through clean, efficient code. My journey in web development started years ago, and I've been hooked ever since.",
-      "I specialize in building responsive web applications using modern technologies. I believe in writing code that's not just functional, but also maintainable and scalable.",
-      "When I'm not coding, you'll find me exploring new technologies, contributing to open source, or sharing knowledge with the developer community.",
+      "I am a software engineer focused on building reliable cloud platforms, developer tooling, and automation that scales. My background spans DevOps, cloud infrastructure, and backend systems, with hands-on experience designing internal platforms, CI/CD pipelines, and cloud-native services on GCP.",
+      "I am drawn to problems at the intersection of infrastructure, security, and developer experience turning complex systems into simple, repeatable workflows. Long term, I’m motivated by building technical foundations that enable teams to move faster and grow into durable, high-impact products.",
     ],
   },
   blog: {
