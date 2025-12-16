@@ -1,4 +1,4 @@
----
+<!---
 title: "Welcome to My Blog"
 date: "2024-01-15"
 excerpt: "This is an example blog post to demonstrate the blog functionality. You can use this as a template for your own posts."
@@ -64,3 +64,4 @@ You can add [links](https://example.com), **bold text**, *italic text*, and `inl
 ## Conclusion
 
 This is just a starting point. Feel free to customize and expand your blog posts with your own content!
+-->
