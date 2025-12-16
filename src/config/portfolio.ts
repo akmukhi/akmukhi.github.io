@@ -171,6 +171,12 @@ export const portfolioConfig: PortfolioConfig = {
       technologies: ["Python", "GCP", "Airflow"],
       githubUrl: "https://github.com/akmukhi/high-scale-event-pipeline",
       //liveUrl: "https://yourproject.com",
+    },
+    {
+      title: "Data Pipeline Platform",
+      description: "This is a production-ready ETL (Extract, Transform, Load) data pipeline platform built with Python, Celery, PostgreSQL, and Redis that enables efficient batch data processing from multiple database sources. The platform features asynchronous task processing, multiple transformation types (SQL, Python, or declarative configs), flexible write strategies, and built-in reliability features like automatic retries, idempotency, and schema evolution support. It includes a REST API, CLI, Docker setup, and comprehensive monitoring tools for managing and orchestrating scalable data pipelines in production environments.",
+      technologies: ["Python", "Redis", "PostgreSQL", "Docker"],
+      githubUrl: "https://github.com/akmukhi/data-pipeline-platform"
     }
   ],
   stats: {
