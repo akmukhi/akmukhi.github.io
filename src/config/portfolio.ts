@@ -88,7 +88,7 @@ export const portfolioConfig: PortfolioConfig = {
     },
     {
       title: "Backend",
-      skills: ["Bash", "Python", "PostgreSQL", "Java", "Ruby", "Go", "MySQL"],
+      skills: ["Bash", "Python", "PostgreSQL", "Java", "Ruby", "Go", "MySQL", "Redis"],
     },
     {
       title: "Infrastructure as Code Tools",
