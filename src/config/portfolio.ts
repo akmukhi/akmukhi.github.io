@@ -177,6 +177,12 @@ export const portfolioConfig: PortfolioConfig = {
       description: "This is a production-ready ETL (Extract, Transform, Load) data pipeline platform built with Python, Celery, PostgreSQL, and Redis that enables efficient batch data processing from multiple database sources. The platform features asynchronous task processing, multiple transformation types (SQL, Python, or declarative configs), flexible write strategies, and built-in reliability features like automatic retries, idempotency, and schema evolution support. It includes a REST API, CLI, Docker setup, and comprehensive monitoring tools for managing and orchestrating scalable data pipelines in production environments.",
       technologies: ["Python", "Redis", "PostgreSQL", "Docker"],
       githubUrl: "https://github.com/akmukhi/data-pipeline-platform"
+    },
+    {
+      title: "Infrastructure Control Plane",
+      description: "A Go based rRPC control plane for managing infrastructure deployments through strongly typed, secure RPC APIs instead of REST. It exposes Kubernetes native development, rollback, and status operations with real-time streaming updates. The system enforces mTLS for service to service to service secuirty. Desgined with clear control plane and data separation.",
+      technologies: ["Go", "Kubernetes", "PostgreSQL", "Docker"],
+      githubUrl: "https://github.com/akmukhi/Control-Plane"
     }
   ],
   stats: {
