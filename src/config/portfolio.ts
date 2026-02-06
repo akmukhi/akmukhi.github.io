@@ -74,7 +74,7 @@ export const portfolioConfig: PortfolioConfig = {
       "I'm driven by designing systems that scale both technology and the people who use it."
     ],
     email: "akmukhi3@gmail.com",
-    location: "Detroit, MI",
+    location: "New York City, NY",
   },
   social: [
     { name: "GitHub", url: "https://github.com/akmukhi" },
@@ -186,7 +186,7 @@ export const portfolioConfig: PortfolioConfig = {
     }
   ],
   stats: {
-    yearsExperience: 3,
+    yearsExperience: 5,
     projectsCompleted: 20,
     //happyClients: 20,
     customStat: {
