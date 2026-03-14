@@ -195,7 +195,7 @@ export const portfolioConfig: PortfolioConfig = {
     },
   },
   about: {
-    heading: "Turning infrastructure into leverage for product teams.",
+    heading: "Turning infrastructure into leverage for product and developerteams.",
     paragraphs: [
       "I am a software engineer focused on building reliable cloud platforms, developer tooling, and automation that scales. My background spans DevOps, cloud infrastructure, and backend systems, with hands-on experience designing internal platforms, CI/CD pipelines, and cloud-native services on GCP.",
       "I am drawn to problems at the intersection of infrastructure, security, and developer experience turning complex systems into simple, repeatable workflows. Long term, I’m motivated by building technical foundations that enable teams to move faster and grow into durable, high-impact products.",
